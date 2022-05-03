@@ -227,12 +227,12 @@ input[type=text]:hover{
     
     .profile-parts1 {
         flex: 30%;
-        padding-left: 25px;
+        padding-left: 20px;
     }
     
     .profile-parts1 img{
         border-radius: 360%;
-        width: 80px;
+        width: 70px;
     }
 
     .profile-parts1 .gear-mobile{
@@ -248,8 +248,9 @@ input[type=text]:hover{
         width: 25px;
     }
     
-    .sub3 {
+    .sub3, .sub2 {
         font-size: 14px;
+        padding-left: 10px;
     }
     
     .profile-sub4 {
@@ -257,7 +258,7 @@ input[type=text]:hover{
     }
     
     .sub4 {
-        padding: 0px 15px 0px 25px;
+        padding: 0px 15px 0px 10px;
         line-height: 1.6;
         text-align: justify;
     }
