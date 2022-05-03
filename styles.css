@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding: 25px 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+header, .nav-bar, .nav-bar li, .nav-bar li a, .nav-bar li img, .header img  {
+    background-color: #ffffff;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+}
+
+.nav-bar {
+    list-style-type: none;
+    padding-left: 70px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.nav-bar li img {
+    width: 25px;
+}
+
+input[type=text] {
+    text-align: left;
+    padding: 5px 40px;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+    font-size: 14px;
+    font-weight: 300;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+input[type=text]:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    border-radius: 5px;
+  }
+  input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+    border-radius: 5px;
+  }
+
+.search {
+    margin-left: 240px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile-parts1 {
+    flex: 30%;
+    padding-left: 100px;
+}
+
+.profile-parts1 img{
+    border-radius: 360%;
+    width: 150px;
+}
+
+.gear-mobile {
+    display: none;
+}
+
+.profile-parts2 {
+    flex: 70%;
+    padding-left: 50px;
+}
+
+.profile-sub2, .profile-sub3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub2, .sub3 {
+    padding: 10px 0px 20px 25px;
+}
+
+.sub2 h2 {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.sub2 a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sub2 img {
+    width: 25px;
+}
+
+.sub2 a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sub3 {
+    font-size: 14px;
+}
+
+.profile-sub4 {
+    padding-bottom: 50px;
+}
+
+.sub4 {
+    padding: 0px 50px 0px 25px;
+    line-height: 1.6;
+}
+
+.sub4 a {
+    color: #00377C;
+}
+
+.profile-sub4 .heading {
+    font-size: 14px;
+}
+
+.profile-sub4 .description {
+    font-size: 14px;
+}
+
+.profile-sub4 a {
+    font-size: 16px;
+}
+
+.tab {
+    display: flex;
+    padding: 15px 300px;
+}
+
+.tab-content {
+    flex: 25%;
+}
+
+.inner-tab {
+    display: flex;
+    align-items: center;
+}
+
+.inner-item1 {
+    flex: 25%;
+}
+
+.inner-item1 img {
+    width: 15px;
+}
+
+.inner-item2 {
+    flex: 75%;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+}
+
+.inner-gallery {
+    flex: 33.3%;
+    padding-bottom: 20px;
+}
+
+.inner-gallery img {
+    width: 300px;
+    height: auto;
+}
+
+@media screen and (max-width:420px) {
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    main {
+        padding: 25px 0px;
+    }
+    
+    .nav-bar {
+        list-style-type: none;
+        padding-left: 5px;
+    }
+    
+    .nav-bar li img {
+        width: 25px;
+    }
+    
+    input[type=text] {
+        display: none;
+    }
+    
+    .search {
+        display: none;
+    }
+    
+    .profile {
+        display: flex;
+    }
+    
+    .profile-parts1 {
+        flex: 25%;
+        padding-left: 25px;
+    }
+    
+    .profile-parts1 img{
+        border-radius: 360%;
+        width: 70px;
+    }
+
+    .profile-parts1 .gear-mobile{
+        width: 50px;
+    }
+    
+    .profile-parts2 {
+        flex: 75%;
+        padding-left: 0px;
+    }
+    
+    .sub2 img {
+        width: 25px;
+    }
+    
+    .sub3 {
+        font-size: 14px;
+    }
+    
+    .profile-sub4 {
+        padding-bottom: 25px;
+    }
+    
+    .sub4 {
+        padding: 0px 15px 0px 25px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .profile-sub4 .description {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .tab {
+        display: flex;
+        padding: 15px 10px;
+    }
+    
+    .gallery {
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .inner-gallery {
+        flex: 33.33%;
+        padding-bottom: 10px;
+    }
+    
+    .inner-gallery img {
+        width: 110px;
+        height: auto;
+    }
+
+    .gear-mobile {
+        padding-top: 70px;
+        display: unset;
+    }
+
+    .gear-desktop {
+        display: none;
+    }
+    
+}
